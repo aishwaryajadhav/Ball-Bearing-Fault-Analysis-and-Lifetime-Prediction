@@ -37,6 +37,6 @@ feature=np.vstack((feature,clf))
 feature=np.vstack((feature,shape))
 feature=np.transpose(feature)
 
-with open('testxy wpca.csv', 'wb') as f:
+with open('testxy_wpca.csv', 'wb') as f:
     wtr = csv.writer(f, delimiter= ',')
     wtr.writerows(feature)

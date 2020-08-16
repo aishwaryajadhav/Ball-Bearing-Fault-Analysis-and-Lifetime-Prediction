@@ -22,22 +22,23 @@ crest=[]
 clf=[]
 impulse=[]
 shp=[]
-rms b=[]
-stddev b=[]
-peak b=[]
-kur b=[]
-skew b=[]
-crest b=[]
-clf b=[]
-impulse b=[]
-shp b=[]
+
+rms_b=[]
+stddev_b=[]
+peak_b=[]
+kur_b=[]
+skew_b=[]
+crest_b=[]
+clf_b=[]
+impulse_b=[]
+shp_b=[]
 
 for i in range(0, np.shape(s1)[0]):
     if i%100==0:
         if(i+100<np.shape(s1)[0]):
             en=i+100
         else:
-        en=np.shape(s1)[0]
+            en=np.shape(s1)[0]
         a=np.square(s1[i:en])
         a=np.mean(a, axis=0)
         r=np.sqrt(a)
@@ -98,15 +99,15 @@ crest = np.array(crest, dtype=np.float64)
 clf = np.array(clf, dtype=np.float64)
 impulse = np.array(impulse, dtype=np.float64)
 shp = np.array(shp, dtype=np.float64)
-rms b = np.array(rms b, dtype=np.float64)
-stddev b = np.array(stddev b, dtype=np.float64)
-peak b = np.array(peak b, dtype=np.float64)
-kur b = np.array(kur b, dtype=np.float64)
-skew b = np.array(skew b, dtype=np.float64)
-crest b = np.array(crest b, dtype=np.float64)
-clf b = np.array(clf b, dtype=np.float64)
-impulse b = np.array(impulse b, dtype=np.float64)
-shp b = np.array(shp b, dtype=np.float64)
+rms_b = np.array(rms_b, dtype=np.float64)
+stddev_b = np.array(stddev_b, dtype=np.float64)
+peak_b = np.array(peak_b, dtype=np.float64)
+kur_b = np.array(kur_b, dtype=np.float64)
+skew_b = np.array(skew_b, dtype=np.float64)
+crest_b = np.array(crest_b, dtype=np.float64)
+clf_b = np.array(clf_b, dtype=np.float64)
+impulse_b = np.array(impulse_b, dtype=np.float64)
+shp_b = np.array(shp_b, dtype=np.float64)
 
 feature=[]
 feature.append(rms)
@@ -118,15 +119,15 @@ feature.append(clf)
 feature.append(impulse)
 feature.append(shp)
 feature.append(crest)
-feature.append(rms b)
-feature.append(stddev b)
-feature.append(peak b)
-feature.append(kur b)
-feature.append(skew b)
-feature.append(crest b)
-feature.append(clf b)
-feature.append(impulse b)
-feature.append(shp b)
+feature.append(rms_b)
+feature.append(stddev_b)
+feature.append(peak_b)
+feature.append(kur_b)
+feature.append(skew_b)
+feature.append(crest_b)
+feature.append(clf_b)
+feature.append(impulse_b)
+feature.append(shp_b)
 feature = np.array(feature, dtype=np.float64)
 feature=np.transpose(feature)
 
