@@ -131,6 +131,6 @@ feature.append(shp_b)
 feature = np.array(feature, dtype=np.float64)
 feature=np.transpose(feature)
 
-with open('test wpca.csv', 'wb') as f:
+with open('test_wpca.csv', 'wb') as f:
     wtr = csv.writer(f, delimiter= ',')
     wtr.writerows(feature)
