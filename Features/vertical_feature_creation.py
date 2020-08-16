@@ -7,7 +7,7 @@ import csv
 
 
 names = ['A','B']
-dataset1 = pandas.read csv('C:nnUsersnnDellnnDownloadsnndenoised.csv',names=names)
+dataset1 = pandas.read csv('C:\\Users\\Dell\\Downloads\\denoised.csv',names=names)
 count=102401
 
 s1 = dataset1['A'][:count]
