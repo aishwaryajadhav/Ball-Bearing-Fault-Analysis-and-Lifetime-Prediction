@@ -8,9 +8,9 @@ names = ['A','B','C','D']
 names2 = ['A','B','C','D','E','F','G','H','I']
 names1 = ['A','B']
 
-dataset1 = pandas.read csv('C:\\Users\\Dell\\Downloads\\testxy pca.csv',names=names)
+dataset1 = pandas.read csv('C:\\Users\\Dell\\Downloads\\testxy_pca.csv',names=names)
 dataset2 = pandas.read csv('C:\\Users\\Dell\\Downloads\\denoised.csv',names=names1)
-dataset3 = pandas.read csv('C:\\Users\\Dell\\Downloads\\testxy wpca.csv',names=names2)
+dataset3 = pandas.read csv('C:\\Users\\Dell\\Downloads\\testxy_wpca.csv',names=names2)
 count=1024
 A1 = dataset1['A'][:1024]
 B1 = dataset1['B'][:1024]
