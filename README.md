@@ -1,6 +1,6 @@
 # Ball-Bearing-Fault-Analysis-and-Lifetime-Prediction
 
-The goal is to analysis bi-axial accelerometer signal data collected from multiple different machines in their healthy and faulty (simulated) states and identify signals that typically detect faults in the bearings. This is a time-series analysis problem where detection of signals that denote faults in ball bearings is like anomaly detection. Once the fault signals are detected, the lifetime of the particular ball bearing is then predicted. 
+The goal is to analysis bi-axial accelerometer signal data collected from multiple different machines and identify signals that typically detect faults in the bearings. This is a time-series analysis problem where detection of signals that denote faults in ball bearings is like anomaly detection. Once the fault signals are detected, the lifetime of the particular ball bearing is then predicted. 
 
 This repo contains code for the fault detection part. Here the data is curated, denoised, features are extracted and observations are clustered to detect outliers (fault signals).
 
